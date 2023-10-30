@@ -19,3 +19,4 @@ In case you open a browse-screen in lookup-mode (to pickup value, for example, t
 * Open the single existing office in editor.
 * Click on button to pickup a city for the office. Cities browser will be opened in lookup-mode. Click on name cell of the single existing row. You won't see a popup with full value.
 ![Cities browser in lookup-mode](docs/Cities browser in lookup-mode.png)
+![Cities browser in lookup-mode (not selected)](docs/Cities browser in lookup-mode not selected.png)
