@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.11.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+
+    <changeSet id="1" author="TableCellClick" runOnChange="true">
+        <preConditions onFail="MARK_RAN">
+            <and>
+                <tableExists tableName="CITY"/>
+                <sqlCheck expectedResult="0">
+                    SELECT COUNT(id) FROM city WHERE ID = 'e2f2bd96-d73e-4f92-a3fd-9467c6e4aff0';
+                </sqlCheck>
+            </and>
+        </preConditions>
+
+        <insert tableName="CITY">
+            <column name="ID" value="e2f2bd96-d73e-4f92-a3fd-9467c6e4aff0"/>
+            <column name="NAME" value="Samara-Samara-Samara-Samara-Samara"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

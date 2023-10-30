@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <item screen="City.browse" caption="msg://org.izumi.jmix.tablecellclick.screen.city/cityBrowse.menu"/>
+    <item screen="Office.browse" caption="msg://org.izumi.jmix.tablecellclick.screen.office/officeBrowse.menu"/>
+
+</menu-config>
